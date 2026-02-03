@@ -1,0 +1,218 @@
+
+.services{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    background-color: #f4f4f4;
+}
+.cards{
+    margin: 50px 70px 70px 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4% 2%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 370px;
+    height: 200px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.card i{
+    padding: 15px;
+    border-radius: 100%;
+    background-color: #d2d2d2;
+    margin-bottom: 15px;
+}
+.card:hover i{
+    background-color: #000000;
+    color: #ffffff;
+}
+.card h3{
+    margin: 0;
+}
+
+/* ==================== Portofolio ==================== */
+#portofolio{
+    background-color: #ffffff;
+}
+.Pimg{
+    width: 420px;
+    height: 400px;
+}
+.Pimg img{
+    width: 100%;
+}
+.Pnavigate{
+    justify-content: space-between;
+    width: 400px;
+    display: flex;
+}
+.navBut {
+    background: none;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navBut:focus{
+    outline: none;
+    border-bottom: solid 2px black;
+}
+.navBut:focus-visible{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+.hover{
+    height: 82%;
+    background-color: #ffffffdb;
+    visibility: hidden;
+    position: absolute;
+    margin: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 0.3s ease, transform 0.5s ease;
+}
+.Pimg:hover .hover{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+
+}
+.hover p{
+    font-size: 25px;
+    font-weight: 400;
+}
+#portofolio .Pimg{
+    position: relative;
+    
+}
+
+/* ==================== testimonials ==================== */
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.comment img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    margin-bottom: 20px;
+}
+.comment h4{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+.comment p{
+    margin-top: 0;
+    font-size: 20px;
+    color: #909090;
+}
+.Tbutton button{
+    background-color: #d2d2d2;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    height: 15px;
+    width: 10px;
+}
+.Tbutton button:focus{
+    background-color: #777777;
+}
+
+
+/* ==================== numbers ==================== */
+
+.numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 90px;
+    font-size: 25px;
+
+}
+.Nnumber p,h3{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Nnumber div{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==================== Our Team ==================== */
+
+.Tcard img{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+border-radius: 10px;
+}
+.Tcard{
+    background-color: rgb(14, 0, 51);
+    color: #ffffff;
+    font-size: 20px;
+    padding-bottom :10px;
+    border-radius: 10px;
+    position: relative;
+}
+.Thover{
+    height: 82%;
+    z-index: 9;
+    background-color: #ffffffdb;
+    visibility: visible;
+    position: absolute;
+    margin: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.1) rotateY(0deg);
+    transition: opacity 0.3s ease, transform 0.5s ease;
+}
+.Tcard:hover .Thover{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) rotateY(360deg);;
+}
+.Tcard i{
+    background-color: #000000;
+    border-radius: 60px;
+    padding: 8px 5px;
+    margin: 5px;
+    font-size: 25px;
+}
+.Tcard i:hover{
+    background: #ffffff;
+    border: 1px solid black;
+    color: black;
+}
